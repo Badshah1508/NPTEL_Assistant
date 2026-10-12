@@ -5,7 +5,11 @@ from app.api.endpoints import courses, notes, questions, quizzes, upload, chat, 
 from app.database.session import Base, engine
 
 # Create tables if not existing
-Base.metadata.create_all(bind=engine)
+try:
+    Base.metadata.create_all(bind=engine)
+except Exception as e:
+    import logging
+    logging.getLogger(__name__).warning(f"Database initialization deferred: {e}")
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
