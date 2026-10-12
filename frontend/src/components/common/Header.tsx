@@ -38,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold tracking-tight text-slate-900">StudyPilot AI</span>
+              <span className="font-bold tracking-tight text-slate-900">NPTEL_Assistant</span>
               <span className="hidden rounded bg-indigo-50 px-2 py-0.5 text-[11px] font-semibold text-indigo-700 sm:inline-block">
                 NPTEL Practice
               </span>

@@ -35,7 +35,7 @@ export const DashboardPage: React.FC = () => {
             Master Your Weekly Lecture Materials
           </h1>
           <p className="text-sm text-slate-300 sm:text-base">
-            Upload your lecture slides ZIP. StudyPilot AI extracts concepts, builds concise short notes,
+            Upload your lecture slides ZIP. NPTEL_Assistant extracts concepts, builds concise short notes,
             and validates 50 original practice questions per week grounded strictly in your uploaded slides.
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2">

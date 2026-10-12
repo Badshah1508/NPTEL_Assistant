@@ -23,7 +23,7 @@ wheels/
 venv/
 ENV/
 *.db
-studypilot.db
+nptel_assistant.db
 
 # Storage & Uploads
 storage/

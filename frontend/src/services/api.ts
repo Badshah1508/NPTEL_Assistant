@@ -25,7 +25,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 class ApiService {
   private getStorageKey(key: string): string {
-    return `studypilot_${key}`;
+    return `nptel_assistant_${key}`;
   }
 
   // --- Courses & Workspace ---

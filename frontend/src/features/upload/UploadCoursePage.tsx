@@ -239,7 +239,7 @@ export const UploadCoursePage: React.FC = () => {
               disabled={isProcessingStarted}
               className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-2.5 text-xs font-bold text-white shadow hover:bg-indigo-700 transition active:scale-95"
             >
-              <span>Confirm & Start StudyPilot Pipeline</span>
+              <span>Confirm & Start NPTEL_Assistant Pipeline</span>
               <ArrowRight className="h-4 w-4" />
             </button>
           </div>

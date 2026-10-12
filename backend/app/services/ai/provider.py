@@ -95,10 +95,10 @@ class GeminiProvider(BaseLLMProvider):
 def get_llm_provider() -> BaseLLMProvider:
     provider_type = settings.AI_PROVIDER.lower()
     if provider_type == "ollama":
-        return OllamaProvider(base_url=settings.OLLAMA_BASE_URL, model=settings.AI_MODEL if settings.AI_MODEL != "studypilot-v1" else "llama3.1:8b")
+        return OllamaProvider(base_url=settings.OLLAMA_BASE_URL, model=settings.AI_MODEL if settings.AI_MODEL != "nptel-assistant-v1" else "llama3.1:8b")
     elif provider_type == "openai" and settings.OPENAI_API_KEY:
-        return OpenAIProvider(api_key=settings.OPENAI_API_KEY, model=settings.AI_MODEL if settings.AI_MODEL != "studypilot-v1" else "gpt-4o")
+        return OpenAIProvider(api_key=settings.OPENAI_API_KEY, model=settings.AI_MODEL if settings.AI_MODEL != "nptel-assistant-v1" else "gpt-4o")
     elif provider_type == "gemini" and settings.GEMINI_API_KEY:
-        return GeminiProvider(api_key=settings.GEMINI_API_KEY, model=settings.AI_MODEL if settings.AI_MODEL != "studypilot-v1" else "gemini-1.5-flash")
+        return GeminiProvider(api_key=settings.GEMINI_API_KEY, model=settings.AI_MODEL if settings.AI_MODEL != "nptel-assistant-v1" else "gemini-1.5-flash")
     else:
         return MockLLMProvider()

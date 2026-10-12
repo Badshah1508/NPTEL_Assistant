@@ -22,7 +22,7 @@ export const AskAIPage: React.FC = () => {
       id: 'welcome',
       sender: 'assistant',
       content:
-        `Hello! I am your **StudyPilot AI Assistant**, strictly grounded in your Week ${selectedWeek} uploaded lecture slides.\n\nAsk me about mathematical derivations (e.g. Amdahl's Law, CPU execution equations), pipeline hazards, or dynamic branch prediction. Every response is verified with exact slide citations.`,
+        `Hello! I am your **NPTEL_Assistant**, strictly grounded in your Week ${selectedWeek} uploaded lecture slides.\n\nAsk me about mathematical derivations (e.g. Amdahl's Law, CPU execution equations), pipeline hazards, or dynamic branch prediction. Every response is verified with exact slide citations.`,
       timestamp: '11:00 AM',
       citations: [
         {
@@ -138,7 +138,7 @@ export const AskAIPage: React.FC = () => {
             >
               <div className="flex items-center justify-between gap-4 border-b pb-1.5 opacity-80 text-[10px]">
                 <span className="font-bold uppercase tracking-wider">
-                  {msg.sender === 'user' ? 'You' : 'StudyPilot AI'}
+                  {msg.sender === 'user' ? 'You' : 'NPTEL_Assistant'}
                 </span>
                 <span>{msg.timestamp}</span>
               </div>

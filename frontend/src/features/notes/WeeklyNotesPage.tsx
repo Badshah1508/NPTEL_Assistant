@@ -52,7 +52,7 @@ export const WeeklyNotesPage: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `StudyPilot_Week_${notes.weekNumber}_Notes.md`;
+    a.download = `NPTEL_Assistant_Week_${notes.weekNumber}_Notes.md`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -169,7 +169,7 @@ export const WeeklyNotesPage: React.FC = () => {
             </button>
           </div>
           <p className="text-xs text-emerald-800">
-            StudyPilot AI maps every concept taught in the uploaded slides. Here is the verified coverage report for Week {notes.weekNumber}:
+            NPTEL_Assistant maps every concept taught in the uploaded slides. Here is the verified coverage report for Week {notes.weekNumber}:
           </p>
 
           <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-3 pt-2">

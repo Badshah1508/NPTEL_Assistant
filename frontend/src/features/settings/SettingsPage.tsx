@@ -13,7 +13,7 @@ import {
 
 export const SettingsPage: React.FC = () => {
   const [provider, setProvider] = useState<'mock' | 'ollama' | 'openai' | 'gemini'>('mock');
-  const [modelName, setModelName] = useState('studypilot-deterministic-v1');
+  const [modelName, setModelName] = useState('nptel-assistant-deterministic-v1');
   const [ollamaEndpoint, setOllamaEndpoint] = useState('http://localhost:11434');
   const [timerDuration, setTimerDuration] = useState('60');
   const [noteDetail, setNoteDetail] = useState('balanced');

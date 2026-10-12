@@ -1,4 +1,4 @@
-# StudyPilot AI 🎓
+# NPTEL_Assistant 🎓
 > **An Intelligent Weekly Study Notes and NPTEL-Style Practice Platform**
 > Grounded strictly in uploaded course lecture slides and materials.
 
@@ -6,7 +6,7 @@
 
 ## 🌟 Executive Overview
 
-**StudyPilot AI** is a production-minded web application designed for students preparing for weekly university and NPTEL examinations. Students upload a single ZIP archive containing course lecture documents (PDFs, PPTX presentations, DOCX handouts, or Markdown notes). 
+**NPTEL_Assistant** is a production-minded web application designed for students preparing for weekly university and NPTEL examinations. Students upload a single ZIP archive containing course lecture documents (PDFs, PPTX presentations, DOCX handouts, or Markdown notes). 
 
 The platform extracts, organizes, and processes materials on a week-by-week basis to produce:
 1. **Comprehensive Weekly Short Notes** with concept coverage checklists, KaTeX formulas, tables, and exact slide citations.
@@ -154,7 +154,7 @@ docker compose ps
 ## 📂 Project Directory Structure
 
 ```text
-StudyPilot AI/
+NPTEL_Assistant/
 ├── frontend/                     # React 18 + Vite + TypeScript
 │   ├── src/
 │   │   ├── components/           # Reusable UI (FormulaRenderer, Header, Sidebar)

@@ -123,7 +123,7 @@ export const MockTestPage: React.FC = () => {
   };
 
   const handleRetakeTest = () => {
-    localStorage.removeItem(`studypilot_attempt_course-nptel-hpca-01_w${selectedWeek}`);
+    localStorage.removeItem(`nptel_assistant_attempt_course-nptel-hpca-01_w${selectedWeek}`);
     const fresh = api.getOrCreateAttempt('course-nptel-hpca-01', selectedWeek, isTimed);
     setAttempt(fresh);
     setIsReviewMode(false);

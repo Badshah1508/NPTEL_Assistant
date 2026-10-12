@@ -10,7 +10,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
-    description="StudyPilot AI — Intelligent Weekly Study Notes and NPTEL-Style Practice Platform API",
+    description="NPTEL_Assistant — Intelligent Weekly Study Notes and NPTEL-Style Practice Platform API",
 )
 
 # CORS Middleware

@@ -110,7 +110,7 @@ export const QuestionBankPage: React.FC = () => {
             <span>Source Grounding Shortage Notice ({weekInfo.validQuestionsCount} / {weekInfo.targetQuestionsCount} Questions)</span>
           </div>
           <p className="leading-relaxed">
-            {weekInfo.shortageExplanation} StudyPilot AI prioritizes factual authenticity over arbitrary counts and never invents synthetic questions.
+            {weekInfo.shortageExplanation} NPTEL_Assistant prioritizes factual authenticity over arbitrary counts and never invents synthetic questions.
           </p>
         </div>
       )}

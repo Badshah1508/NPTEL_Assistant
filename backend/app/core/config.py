@@ -3,13 +3,13 @@ from typing import List
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "StudyPilot AI"
+    PROJECT_NAME: str = "NPTEL_Assistant"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
 
     # Database
     DATABASE_URL: str = os.getenv(
-        "DATABASE_URL", "sqlite+aiosqlite:///./studypilot.db"
+        "DATABASE_URL", "sqlite+aiosqlite:///./nptel_assistant.db"
     )
 
     # CORS
@@ -27,7 +27,7 @@ class Settings(BaseSettings):
 
     # AI Configuration (Provider-independent layer)
     AI_PROVIDER: str = os.getenv("AI_PROVIDER", "mock")  # mock, ollama, openai, gemini
-    AI_MODEL: str = os.getenv("AI_MODEL", "studypilot-v1")
+    AI_MODEL: str = os.getenv("AI_MODEL", "nptel-assistant-v1")
     OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
