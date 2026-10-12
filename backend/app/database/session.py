@@ -8,6 +8,8 @@ if db_url.startswith("sqlite+aiosqlite://"):
     sync_db_url = db_url.replace("sqlite+aiosqlite://", "sqlite://")
 elif db_url.startswith("postgresql+asyncpg://"):
     sync_db_url = db_url.replace("postgresql+asyncpg://", "postgresql://")
+elif db_url.startswith("postgres://"):
+    sync_db_url = db_url.replace("postgres://", "postgresql://", 1)
 else:
     sync_db_url = db_url
 
